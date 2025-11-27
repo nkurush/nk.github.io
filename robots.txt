@@ -1,0 +1,76 @@
+# ========================================
+# ROBOTS.TXT для arbitrage-calc.ru
+# ========================================
+# Этот файл указывает поисковикам как индексировать сайт
+
+# РАЗРЕШЕНИЕ ДЛЯ ВСЕХ ПОИСКОВИКОВ
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+
+# ЗАДЕРЖКА МЕЖДУ ЗАПРОСАМИ (в секундах)
+# Даёшь поисковику время на загрузку страниц
+Crawl-delay: 1
+
+# ЧАСТОТА ПЕРЕИНДЕКСАЦИИ
+Request-rate: 30/1m
+
+# ========================================
+# ССЫЛКА НА SITEMAP (обязателен!)
+# ========================================
+Sitemap: https://arbitrage-calc.ru/sitemap.xml
+
+# ========================================
+# СПЕЦИАЛЬНЫЕ ПРАВИЛА ДЛЯ GOOGLEBOT
+# ========================================
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Crawl-delay: 0
+
+# ========================================
+# СПЕЦИАЛЬНЫЕ ПРАВИЛА ДЛЯ ЯНДЕКСА
+# ========================================
+User-agent: Yandex
+Allow: /
+Disallow: /private/
+Crawl-delay: 1
+
+# ========================================
+# СПЕЦИАЛЬНЫЕ ПРАВИЛА ДЛЯ BINGBOT
+# ========================================
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+Crawl-delay: 1
+
+# ========================================
+# BLOCK ПЛОХИХ БОТОВ (спам)
+# ========================================
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# ========================================
+# COMMENTS
+# ========================================
+# priority: 1.0 = очень важная
+# priority: 0.8 = важная
+# priority: 0.5 = средняя
+# priority: 0.3 = менее важная
+#
+# changefreq: always / hourly / daily / weekly / monthly / yearly / never
+#
+# lastmod: дата последнего обновления (YYYY-MM-DD)
